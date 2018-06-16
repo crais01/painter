@@ -3,6 +3,7 @@
     <% @pins.each do |pin| %>
       <div class="col-md-3">
         <div class="thumbnail">     
+          <%= pin.name %><br>
           <%= pin.desciption %>
           <%= image_tag(pin.photo, :class=>'img-responsive') %>
             <div class="buttons" style="padding: 10px;">
