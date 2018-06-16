@@ -16,25 +16,7 @@
     <header>
       <img src="http://www.educacionyculturaaz.com/wp-content/uploads/2016/11/pinterest-logo1-1.jpg" height="100" width="300">
     </header>
-    <nav class="navbar navbar-default">
-          <div class="container-fluid">
-            <div id="navbar" class="collapse navbar-collapse">
-              <ul class="nav navbar-nav">
-                <li><%= link_to root_path, class: "navbar-brand" do %><i class="glyphicon glyphicon-home"></i> Inicio<% end %></li>
-                <!--<li><a class="navbar-brand"  href="/welcome/users"><span class="glyphicon glyphicon-home"></span>Inicio</a></li>-->
-              </ul>
-              <form class="navbar-form navbar-left"">
-                <div class="form-group">
-                  <input type="text" class="form-control" placeholder="Search">
-                </div>
-                <button type="submit" class="btn btn-default"><i class="glyphicon glyphicon-search"></i></button>
-              </form>
-               <ul class="nav navbar-nav navbar-right">
-                <li><button type="button" class="btn btn-default navbar-btn">Sign in</button></li>
-               </ul>
-            </div>
-          </div>
-    </nav>
+    <%= render 'shared/navbar' %>
     <%= yield %>
   </body>
 </html>
